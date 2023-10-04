@@ -1,0 +1,366 @@
+/* Estilo para el encabezado */
+h1 {
+    text-align: center; /* Alinea el texto a la derecha */
+    padding: 10px; /* Espaciado interior */
+    color: #333; /* Color del texto */
+    font-family: 'Poppins', sans-serif; /* Fuente personalizada */
+    font-size: 2em; /* Tamaño del texto */
+}
+
+/* Estilo para el título principal */
+.Titulo-principal {
+    font-size: 70px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    font-family: 'Poppins', sans-serif; /* Fuente personalizada */
+    color: #fff; /* Color del texto */
+    animation: animacionTitulo 2s linear infinite; /* Animación continua */
+    text-align: center; /* Alinea el texto al centro */
+    max-width: 100%; /* Ancho máximo del título */
+}
+
+/* Estilo para el contenedor del título */
+.centrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la vista */
+}
+
+/* Icono de scroll */
+.scroll-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.scroll-icon:hover {
+    animation-play-state: paused;
+}
+
+.scroll-icon:active {
+    animation: none;
+    transform: translateY(100vh);
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-30px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-15px);
+    }
+}
+
+/* Animación del título principal */
+@keyframes animacionTitulo {
+    0% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.1); /* Escalado al 110% */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño normal */
+    }
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para el encabezado con imagen de fondo */
+ header {
+    background-image: url('https://i.postimg.cc/vTrvfVT1/23278cc6-24ac-4f1d-ad1d-e462ad605f26.jpg'); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ajusta la altura según tu preferencia */
+}
+
+/* Estilos para la tabla con fondo modificado */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff; /* Cambia el color de fondo de la tabla */
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #007bff; /* Cambia el color de fondo del encabezado de la tabla */
+  color: #fff; /* Cambia el color del texto en el encabezado de la tabla */
+}
+
+/* Resto de tus estilos CSS... */
+
+
+/* Estilos para imágenes en la tabla con transición */
+table img {
+  max-width: 200px;
+  height: auto;
+  transition: transform 0.1s ease-in-out;
+}
+
+/* Aplicar escala cuando pases el cursor sobre las imágenes */
+table img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para los enlaces con transición */
+.menu a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7289da; /* Color característico de Discord */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  margin-top: 1px;
+  margin-right: 20px;
+  
+}
+
+
+/* PARA MODIFICAR LINK CON CUADRADO*/
+
+.link {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #ffffff; /* Color característico de Discord */
+  color: #000000;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  margin-top: 1px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Añadido transición */
+}
+
+.link:hover {
+  background-color: rgba(88, 212, 84, 0.7); /* Color de fondo al pasar el cursor con transparencia */
+  color: #000; /* Color del texto al pasar el cursor en negro */
+}
+
+/* Cambiar el color del texto del enlace al color de Discord */
+.menu a h3 {
+  color: #7289da;
+  
+}
+
+.menu {
+  display: flex;
+  /* Resto del código... */
+}
+.menu a:hover {
+  background-color: #5469d4;
+  color: black; 
+}
+
+/* Estilos para el pie de página */
+footer {
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 0;
+}
+
+
+/*BARRA DE BUSQUEDA 2 boton*/
+
+.container-busqueda {
+  position: relative;
+  display: flex;
+}
+.buscar-btn {
+  
+  background-color: #7289da; /* Green */
+  border: none;
+  color: #fff;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 0px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 200px; /* Aumentar el ancho del botón para que el texto se ajuste en una línea */
+}
+
+.buscar-btn:hover {
+  background-color: #5469d4;
+  color: black; 
+}
+
+
+#busqueda-grande {
+  position: absolute;
+  left: 100%; /* Esto moverá la barra de búsqueda a la derecha del botón */
+  top: -10px; /* Esto moverá la barra de búsqueda 10px hacia arriba */
+}
+
+#busqueda-grande .search-container {
+  display: flex; /* Alinea los elementos hijos en una fila */
+  width: 100%;
+  border-radius: 25px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra de caja */
+}
+
+#busqueda-grande .search-container input[type="text"] {
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+#busqueda-grande .search-container input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 10px #719ECE; /* Sombra de caja cuando el usuario hace foco en la barra de búsqueda */
+}
+#busqueda-grande .search-container button[type="submit"] {
+  display: none; /* Oculta el botón de envío */
+}
+.menu {
+  display: flex;
+  /* Resto del código... */
+}
+
+@keyframes parpadeo {
+  0% {background-color: yellow;}
+  50% {background-color: transparent;}
+  100% {background-color: yellow;}
+}
+
+.parpadeo {
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-iteration-count: 10; /* Parpadea 3 veces */
+}
+
+/* PIE DE PAGINA*/
+#acerca-de {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+#acerca-de:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.acerca-de-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+#acerca-de {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#logo-footer {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+#logo-footer:hover {
+  transform: scale(1.1);
+}
+
+.acerca-de-content {
+  max-width: 800px;
+}
+
+/* BTON PARA VOLVER ARRIBA*/ 
+#btnTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  
+
+}
+
+#btnTopo:hover {
+  background-color: #555;
+}
+
+
+/*  CAMBIAR LOGO SETANTA SPORTS*/
+#setanta-sports {
+  width: 175px; /* Ajusta el ancho del logo */
+  height: 175px; /* Ajusta la altura del logo */
+  border: 1px solid #adadad; /* Cambia #000 al color que prefieras */
+  border-radius: 25px; /* Esto redondeará las esquinas de la imagen */
+}
+
+
+#contenido-links td a {
+  font-family: 'Helvetica', sans-serif; /* Fuente moderna y legible */
+  color: #2c3e50; /* Color de texto oscuro para una mejor legibilidad */
+  font-size: 14px; /* Tamaño de fuente */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* FUNETE  LETRA TABLA 1*/
+
+#tabla1  tr td {
+
+    font-family: 'Helvetica Neue', sans-serif; /* Fuente moderna y legible */
+    color: #000000; /* Color de texto oscuro para una mejor legibilidad */
+    font-size: 16px; /* Tamaño de fuente más grande */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    transition: color 0.3s ease; /* Transición suave del color al pasar el ratón */
+  }
+  
+ 

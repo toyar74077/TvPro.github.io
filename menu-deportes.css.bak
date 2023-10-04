@@ -1,0 +1,94 @@
+/* Estilos generales */
+body {
+    background-color: #808080;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo para el contenedor principal */
+.div-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilo para el menú principal */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo para los elementos del menú principal */
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Estilo para los enlaces "LINK M3U" y "JOIN TO DISCORD" */
+.link-m3u, .discord {
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Cambio de color al pasar el cursor sobre los enlaces */
+.link-m3u:hover, .discord:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para la sección "CATEGORIAS" */
+.categoria-deportes {
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Estilo para el título "CATEGORIAS" */
+.categoria-deportes h3 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* Estilo para el menú desplegable */
+.categorias-lista {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Estilo para las opciones del menú desplegable */
+.categorias-lista li {
+    padding: 5px;
+}
+
+/* Estilo para los enlaces dentro del menú desplegable */
+.categorias-lista a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+/* Mostrar el menú desplegable cuando se pasa el cursor sobre "CATEGORIAS" */
+.categoria-deportes:hover .categorias-lista {
+    display: block;
+}

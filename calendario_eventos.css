@@ -1,0 +1,23 @@
+.containerFrame {
+  width: 50%; /* Reducido de 100% a 80% */
+}
+
+.frameData {
+  width: 80%; /* Reducido de 100% a 80% */
+  margin: 0px 180px; /* Centrado horizontalmente */
+}
+  .hosting {
+    margin: 20px;
+    font-size: 90%;
+    padding: 6px;
+    border: 1px solid #17628b;
+    margin-bottom: 10px;
+  }
+  .hosting a {
+    font-weight: bold;
+    color: #17628b;
+  }
+  .dataList {
+    padding: 20px;
+  }
+  

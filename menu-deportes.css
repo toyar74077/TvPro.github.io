@@ -1,0 +1,85 @@
+.categoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 200px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 100px; /* Ajusta este valor según tus necesidades */
+}
+
+.categoria img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    margin: 30px; /* Ajusta este valor según tus necesidades */
+}
+.categoria img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.1s ease-in-out; /* Añade una transición suave */
+}
+
+.categoria img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen un 10% */
+}
+
+.categoria h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: #333;
+    margin-left: 50px; /* Ajusta este valor según tus necesidades */
+    }
+
+
+
+.motor {
+    padding-left: 50px; /* Ajusta este valor según tus necesidades */
+    }
+    .ufc {
+    padding-left: 0px; /* Ajusta este valor según tus necesidades */
+    }
+    .tenis {
+    padding-left: 20px; /* Ajusta este valor según tus necesidades */
+    }
+
+
+    /* Icono de scroll */
+.scroll-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.scroll-icon:hover {
+    animation-play-state: paused;
+}
+
+.scroll-icon:active {
+    animation: none;
+    transform: translateY(100vh);
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-30px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-15px);
+    }
+}
+

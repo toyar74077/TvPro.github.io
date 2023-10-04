@@ -363,4 +363,33 @@ footer {
     transition: color 0.3s ease; /* Transición suave del color al pasar el ratón */
   }
   
+  /* Estilos para pantallas de tamaño grande (por ejemplo, computadoras de escritorio) */
+@media (min-width: 1200px) {
+  .containerFrame {
+      width: 80%;
+  }
+  .frameData {
+      width: 80%;
+  }
+}
+
+/* Estilos para pantallas de tamaño mediano (por ejemplo, tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .containerFrame {
+      width: 90%;
+  }
+  .frameData {
+      width: 90%;
+  }
+}
+
+/* Estilos para pantallas de tamaño pequeño (por ejemplo, teléfonos móviles) */
+@media (max-width: 767px) {
+  .containerFrame {
+      width: 100%;
+  }
+  .frameData {
+      width: 100%;
+  }
+}
  

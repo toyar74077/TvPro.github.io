@@ -8,46 +8,35 @@
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 200px;
+    gap: 10px;
     justify-items: center;
     align-items: center;
     margin-top: 100px; /* Ajusta este valor según tus necesidades */
 }
 
+
+
 .categoria img {
     width: 100px;
-    height: auto;
+    height: 100px;
     transition: transform 0.3s ease-in-out;
-    margin: 30px; /* Ajusta este valor según tus necesidades */
+    margin: 20px; /* Ajusta este valor según tus necesidades */
 }
-.categoria img {
-    width: 200px;
-    height: auto;
-    transition: transform 0.1s ease-in-out; /* Añade una transición suave */
-}
+
 
 .categoria img:hover {
     transform: scale(1.1); /* Aumenta el tamaño de la imagen un 10% */
 }
 
-.categoria h3 {
-    font-family: 'Arial', sans-serif;
-    font-size: 20px;
-    color: #333;
-    margin-left: 50px; /* Ajusta este valor según tus necesidades */
-    }
+.motor, .ufc, .tenis, .futbol, .Nfl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
-.motor {
-    padding-left: 50px; /* Ajusta este valor según tus necesidades */
-    }
-    .ufc {
-    padding-left: 0px; /* Ajusta este valor según tus necesidades */
-    }
-    .tenis {
-    padding-left: 20px; /* Ajusta este valor según tus necesidades */
-    }
+.motor img, .ufc img, .tenis img, .futbol img, .Nfl img {
+    align-self: center;
+}
 
 
     /* Icono de scroll */

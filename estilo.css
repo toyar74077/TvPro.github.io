@@ -87,12 +87,12 @@ body {
 }
 
 /* Estilos para el encabezado con imagen de fondo */
- header {
-    background-image: url('https://i.postimg.cc/vTrvfVT1/23278cc6-24ac-4f1d-ad1d-e462ad605f26.jpg'); /* Ruta de tu imagen */
-    background-size: cover;
-    background-position: center;
-    width: 1920px;
-    height: 100vh; /* Ajusta la altura según tu preferencia */
+header {
+    background-image: url('https://i.postimg.cc/vTrvfVT1/23278cc6-24ac-4f1d-ad1d-e462ad605f26.jpg');
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el encabezado */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    height: 100vh;
 }
 
 /* Estilos para la tabla con fondo modificado */

@@ -60,8 +60,8 @@ function scrollFunction() {
   }
 }
 
-// Cuando el usuario hace clic en el botón, desplázate hasta la sección del menú
+// Cuando el usuario hace clic en el botón, desplázate hasta la sección de discord
 function topFunction() {
-  var menu = document.getElementById("menu");
-  menu.scrollIntoView({behavior: "smooth"});
+  var discord = document.getElementsByClassName("discord")[0];
+  discord.scrollIntoView({behavior: "smooth"});
 }

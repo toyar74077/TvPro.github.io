@@ -4,7 +4,8 @@
 
 .frameData {
   width: 80%; /* Reducido de 100% a 80% */
-  margin: 0px 180px; /* Centrado horizontalmente */
+  margin: 50px 180px; /* Centrado horizontalmente */
+  
 }
   .hosting {
     margin: 20px;

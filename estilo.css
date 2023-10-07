@@ -88,11 +88,11 @@ body {
 
 /* Estilos para el encabezado con imagen de fondo */
 header {
-    background-image: url('https://i.postimg.cc/vTrvfVT1/23278cc6-24ac-4f1d-ad1d-e462ad605f26.jpg');
-    background-size: cover; /* Asegura que la imagen de fondo cubra todo el encabezado */
-    background-position: center; /* Centra la imagen de fondo */
-    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-    height: 100vh;
+  background-image: url('https://i.postimg.cc/vTrvfVT1/23278cc6-24ac-4f1d-ad1d-e462ad605f26.jpg');
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el encabezado */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  height: 100vh;
 }
 
 /* Estilos para la tabla con fondo modificado */
@@ -145,6 +145,8 @@ table img:hover {
   margin-right: 1px;
   
 }
+
+
 /* PARA MODIFICAR LINK CON CUADRADO*/
 
 .link {
@@ -362,8 +364,10 @@ margin-bottom: 0%;
 
 /* FUENTE  LETRA TABLA 1*/
 #tabla1 {
-  width: 1470; /* Ajusta este valor según tus necesidades */
+  width: 100%;
+  max-width: 100%; /* Ajusta este valor según tus necesidades */
   margin: 0 auto; /* Centra la tabla horizontalmente */
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
 }
 
 #tabla1  tr td {
@@ -466,7 +470,7 @@ and (-webkit-device-pixel-ratio: 2) {
 #next-result {
   position: fixed;
   bottom: 20px;
-  right: 890px;
+  left: -200px; /* Posición inicial fuera de la pantalla */
   z-index: 99;
   border: none;
   outline: none;
@@ -476,8 +480,29 @@ and (-webkit-device-pixel-ratio: 2) {
   padding: 15px;
   border-radius: 10px;
   font-size: 18px;
-  
+  animation: slide-in 1s forwards, slide-out 1s forwards 20s; /* Duración y nombre de las animaciones */
 }
+
+@keyframes slide-in {
+  0% {
+    left: -200px; /* Posición inicial fuera de la pantalla */
+  }
+  100% {
+    left: calc(50% - 100px); /* Posición final centrada */
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    left: calc(50% - 100px); /* Posición inicial centrada */
+  }
+  100% {
+    left: -200px; /* Posición final fuera de la pantalla */
+  }
+}
+
+
+
 
 #next-result:hover {
   background-color: #555;

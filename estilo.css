@@ -91,6 +91,7 @@ body {
     background-image: url('https://i.postimg.cc/vTrvfVT1/23278cc6-24ac-4f1d-ad1d-e462ad605f26.jpg'); /* Ruta de tu imagen */
     background-size: cover;
     background-position: center;
+    width: 1920px;
     height: 100vh; /* Ajusta la altura según tu preferencia */
 }
 
@@ -366,7 +367,11 @@ margin-bottom: 0%;
   text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
-/* FUNETE  LETRA TABLA 1*/
+/* FUENTE  LETRA TABLA 1*/
+#tabla1 {
+  width: 1470; /* Ajusta este valor según tus necesidades */
+  margin: 0 auto; /* Centra la tabla horizontalmente */
+}
 
 #tabla1  tr td {
 
@@ -463,3 +468,26 @@ and (-webkit-device-pixel-ratio: 2) {
     font-size: 50px;
   }
 }
+
+
+#next-result {
+  position: fixed;
+  bottom: 20px;
+  right: 890px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  
+}
+
+#next-result:hover {
+  background-color: #555;
+
+}
+

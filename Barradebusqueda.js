@@ -1,3 +1,7 @@
+var resultados = [];
+var indiceActual = 0;
+var temporizador;
+
 function mostrarBusqueda() {
     var x = document.getElementById("busqueda-grande");
     if (x.style.display === "none") {
@@ -6,7 +10,6 @@ function mostrarBusqueda() {
         x.style.display = "none";
     }
 }
-
 
 function buscarEnLaPagina() {
     var consulta = document.querySelector("#busqueda-grande .search-container input[type='text']").value;
@@ -18,31 +21,48 @@ function buscarEnLaPagina() {
     
 
     var elementos = document.getElementsByTagName('td');
-    var primerResultado = null;
-
-
-    
+    resultados = [];
+    indiceActual = 0;
 
     for (var i = 0; i < elementos.length; i++) {
         if (elementos[i].textContent.toLowerCase().includes(consulta.toLowerCase())) {
+            resultados.push(elementos[i]);
             elementos[i].classList.add('parpadeo'); // Añade la animación de parpadeo
             setTimeout(function() {
-                elementos[i].classList.remove('parpadeo'); // Elimina la animación de parpadeo después de 3 segundos
-            }, 3000);
-            if (!primerResultado) {
-                primerResultado = elementos[i];
-            }
-        } else {
-            elementos[i].style.backgroundColor = ''; // Quita el resaltado de los elementos que no contienen la consulta de búsqueda
+                elementos[i].classList.remove('parpadeo'); // Elimina la animación de parpadeo después de 10 segundos
+            }, 10000);
         }
     }
 
-    if (primerResultado) {
-        primerResultado.scrollIntoView({behavior: "smooth"});
+    if (resultados.length > 0) {
+        resultados[0].scrollIntoView({behavior: "smooth"});
+        document.getElementById('next-result').style.display = 'block';
+        ocultarBotonDespuesDeTiempo(); // Llama a la función aquí
+    } else {
+        document.getElementById('next-result').style.display = 'none';
     }
+
+    alert("Hay " + resultados.length + " resultados para '" + consulta + "'");
 
     mostrarBusqueda(); // Oculta la barra de búsqueda
 }
+
+function nextResult() {
+    indiceActual = (indiceActual + 1) % resultados.length;
+    resultados[indiceActual].scrollIntoView({behavior: "smooth"});
+    ocultarBotonDespuesDeTiempo(); // Reinicia el temporizador aquí
+}
+
+/*OCULTAR BOTON EN UNOS SEGUNDOS */
+function ocultarBotonDespuesDeTiempo() {
+    clearTimeout(temporizador); // Limpia el temporizador anterior
+    temporizador = setTimeout(function() {
+        document.getElementById('next-result').style.display = 'none';
+    }, 10000); // 10000 milisegundos son 10 segundos
+}
+
+/*CODIGO PARA ACTIVAR VOLVER ARRIBA */
+
 
 // Obtener el botón
 var mybutton = document.getElementById("btnTopo");

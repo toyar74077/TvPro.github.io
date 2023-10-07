@@ -145,13 +145,6 @@ table img:hover {
   margin-right: 1px;
   
 }
-.menu {
-  position: fixed;
-  top: 0; /* Ajusta según tus necesidades */
-  left: 0; /* Ajusta según tus necesidades */
-  /* Resto de tus estilos... */
-}
-
 /* PARA MODIFICAR LINK CON CUADRADO*/
 
 .link {

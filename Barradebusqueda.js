@@ -85,3 +85,10 @@ function topFunction() {
   var discord = document.getElementsByClassName("discord")[0];
   discord.scrollIntoView({behavior: "smooth"});
 }
+
+// Cuando el usuario hace clic en el botón, desplázate hasta la sección de discord
+function topFunction() {
+    var discord = document.getElementsByClassName("discord")[0];
+    discord.scrollIntoView({behavior: "smooth"});
+  }
+  
